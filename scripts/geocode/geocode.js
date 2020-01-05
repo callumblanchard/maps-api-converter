@@ -65,7 +65,7 @@ function writeLocations(results) {
     .then((result) => {
       // // console.log('result :', result);
       const json = JSON.stringify(result.filter((obj) => obj), null, 2);
-      fs.writeFileSync('locations.json', json);
+      fs.writeFileSync('data/locations.json', json);
     })
     .catch((err) => {
       console.log('err :', err);
